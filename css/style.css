@@ -17,30 +17,20 @@ header{
 img.perfil{
     margin: 2rem 0;
     border-radius: 50%;
-    
 }
+
 img.pc-img{
     max-width: 860px;
 
 }
-@media (max-width:666px){
-    img.pc-img{
-        max-width: 400px;
-    }
-}
-@media (max-width:450px){
-    img.pc-img{
-        max-width: 300px;
-    }
-}
+
+
 header h1{
     color:#141c3a ;
     font-family: eurostile, sans-serif;;
     font-weight: 800;
     margin: 0px 0px 24px;
-
 }
-
 header p{
     color:rgba(10, 10, 10, 0.9);
     font-family:europa, sans-serif;
@@ -65,6 +55,7 @@ section.sobre {
     margin: 0px 0px 24px;
     word-break: break-word;
 }
+
 .sobre p{
     font-family: "europa", sans-serif;
     line-height: 1.5;
@@ -73,6 +64,7 @@ section.sobre {
     margin: auto;
     font-size:20px;
 }
+
 
 .habilidades{
     max-width: 1200px;
@@ -97,12 +89,7 @@ section.sobre {
     height: 170px;
     background: #fff;
 }
-@media (max-width: 1086px) {
-    .skill{
-        margin: auto 5px;
 
-        }
-}
 
 .skill h3{
     font-family: "eurostile", sans-serif;
@@ -112,4 +99,37 @@ section.sobre {
 .skill i{
     font-size: 48px;
     width: auto;
+}
+/*=============== Media Queries ===============*/
+@-moz-document (max-width:450px){
+    img.pc-img{
+        max-width: 300px;
+    }
+}
+@media (max-width:666px){
+    img.perfil{
+        max-width: 200px;
+    }
+    img.pc-img{
+        max-width: 400px;
+    }
+    header h1{
+        font-size: 28px;
+    }
+    section.sobre{
+        height: 100vh;
+        max-height: 440px;
+        padding: 5px 5px;
+
+    }
+    .sobre h2{
+        font-size: 28px;
+
+    }
+}
+@media (max-width: 1086px) {
+    .skill{
+        margin: auto 5px;
+
+        }
 }
