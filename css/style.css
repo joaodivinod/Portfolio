@@ -100,12 +100,12 @@ section.sobre {
     font-size: 48px;
     width: auto;
 }
-/*=============== Media Queries ===============*/
-@-moz-document (max-width:450px){
-    img.pc-img{
-        max-width: 300px;
-    }
+.trabalhos{
+    width: auto!important;
+
 }
+/*=============== Media Queries ===============*/
+
 @media (max-width:666px){
     img.perfil{
         max-width: 200px;
@@ -132,4 +132,9 @@ section.sobre {
         margin: auto 5px;
 
         }
+}
+@media (max-width:450px){
+    img.pc-img{
+        max-width: 300px;
+    }
 }
